@@ -43,14 +43,14 @@ input{
 .calc-container{
     background: hsl(0, 0%, 100%);
     border-radius: 25px 25px 0 0;
-    padding: 2em;
+    padding: 2em;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */  /* TWEENER - IE 10 */ /* NEW - Safari 6.1+. iOS 7.1+, BB10 */  
     display: flex;
     flex-direction: column;
     gap: 1em;
     justify-content: center;
 }
 
-.calc-input__data{
+.calc-input__data{  /* OLD - iOS 6-, Safari 3.1-6, BB7 */  /* TWEENER - IE 10 */ /* NEW - Safari 6.1+. iOS 7.1+, BB10 */  
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -63,7 +63,7 @@ input{
 }
 
 .data-container{
-    position: relative;
+    position: relative;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */  /* TWEENER - IE 10 */ /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;
 }
 
@@ -86,6 +86,26 @@ input{
 .data-container input{
     padding-left: 2.96em;
     width: 100%;
+}
+
+.general-input::-webkit-input-placeholder{
+    color: hsl(184, 14%, 56%);
+    font-weight: 500;
+}
+
+.general-input::-moz-placeholder{
+    color: hsl(184, 14%, 56%);
+    font-weight: 500;
+}
+
+.general-input:-ms-input-placeholder{
+    color: hsl(184, 14%, 56%);
+    font-weight: 500;
+}
+
+.general-input::-ms-input-placeholder{
+    color: hsl(184, 14%, 56%);
+    font-weight: 500;
 }
 
 .general-input::placeholder{
@@ -156,7 +176,7 @@ input{
     color: hsl(184, 14%, 56%);
 }
 
-.result{
+.result{  /* OLD - iOS 6-, Safari 3.1-6, BB7 */  /* TWEENER - IE 10 */ /* NEW - Safari 6.1+. iOS 7.1+, BB10 */  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -196,13 +216,15 @@ input[type=number] {
 
 @media screen and (min-width: 500px) {
     .tips-container{
-        column-gap: .5em;
+        -moz-column-gap: .5em;
+             column-gap: .5em;
     }
 }
 
 @media screen and (min-width: 768px) {
     .tips-container{
-        column-gap: .5em;
+        -moz-column-gap: .5em;
+             column-gap: .5em;
     }
 
     .calc-container{
