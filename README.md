@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Biaroxx741/tip-calculator-app-main)
-- Live Site URL: [Add live site URL here](https://tip-calculator-app-biaroxx741.netlify.app/)
+- Solution URL: [Solution](https://github.com/Biaroxx741/tip-calculator-app-main)
+- Live Site URL: [Site](https://tip-calculator-app-biaroxx741.netlify.app/)
 
 ## My process
 
