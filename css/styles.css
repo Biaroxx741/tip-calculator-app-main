@@ -222,10 +222,6 @@ input[type=number] {
 }
 
 @media screen and (min-width: 768px) {
-    .tips-container{
-        -moz-column-gap: .5em;
-             column-gap: .5em;
-    }
 
     .calc-container{
         flex-direction: row;
@@ -247,6 +243,12 @@ input[type=number] {
 }
 
 @media screen and (min-width: 992px) {
+    .tips-container{
+        -moz-column-gap: .3em;
+        column-gap: .3em;
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: repeat(2, 3em);
+    }
     .calc-container{
         max-width: 900px;
     }
